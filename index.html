@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>form</title>
+</head>
+<body>
+    <form class="container">
+        <div>
+            <label for="">Your Name</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div>
+            <label for="">Your Email</label> <br>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div>
+            <label for="favorite">What do you love?</label> <br>
+            <select name="favorite" id="favorite">
+                <option value="movies">Movies</option>
+                <option value="series">Wep Series</option>
+                <option value="video">Short Video</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Chooes a color</label> <br>
+            <input type="color" name="color" id="color">
+        </div>
+       <div>
+        <label for="">Rate the Movies Inception out of 10</label> <br>
+        <input type="range" name="range" id="range" max="10" min="1">
+       </div>
+       <div>
+        <p>Book genre you love</p>
+        <input type="radio" name="fiction" id="fiction" value="fiction">
+        <label for="">Fiction</label> <br>
+        <input type="radio" name="fiction" id="nonfiction" value="non fiction">
+        <label for="">Non Fiction</label> <br>
+        <input type="radio" name="fiction" id="adventure" value="adventure">
+        <label for="">Adventure</label>
+       </div>
+       <div>
+        <input type="checkbox" name="terms" id="terms" >
+        <label for="">I Agree to Terms</label>
+       </div>
+       <button type="submit">Submit</button>
+    </form>
+     <div class="div" style="display: none;">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <form action="" class="form2" style="display: none;">
+            
+        </form>
+     </div>
+  
+    <script src="./script.js"></script>
+</body>
+</html>
